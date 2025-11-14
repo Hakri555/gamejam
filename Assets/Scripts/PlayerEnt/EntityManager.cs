@@ -65,9 +65,19 @@ public class EntManager : MonoBehaviour, IDamageable
     
     public void TakeDamage(float damage) 
     {
-        if (_health > 0) 
+        if (_health > 0)
         {
             _health -= damage;
+            Debug.Log("Игрок получила урон: " + damage + " Теперь хп " + _health);
         }
+        else
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
