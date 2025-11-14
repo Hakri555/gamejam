@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798a994d2cf51754aaa9e5ee6bfcc923, type: 3}
   m_Name: entStatsConfig
   m_EditorClassIdentifier: 
-  _maxHealth: 30
+  _maxHealth: 100
   _maxArmor: 1
   _regenSpeed: 0
   _maxDpsToTake: 10
