@@ -31,8 +31,19 @@ public class BaseHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damage)
     {
-        CurrentHealth -= damage;
-        Debug.Log("База получила урон: " + damage);
+        if (CurrentHealth > 0)
+        {
+            CurrentHealth -= damage;
+            Debug.Log("База получила урон: " + damage);
+        }
+        else
+        {
+            Die();
+        }
+    }
 
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
