@@ -22,4 +22,7 @@ public class bossAttackConfig : ScriptableObject
         _basicDamage = Mathf.Clamp(_basicDamage,1, _basicDamage);
         _critDamage = Mathf.Clamp(_critDamage,BasicDamage, _basicDamage * 5);
     }
+
+
+
 }
