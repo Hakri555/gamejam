@@ -1,14 +1,19 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class EnemyController : MonoBehaviour
 {
-    [Header("�������������� �����")]
+    [Header("Характеристики врага")]
     public float Health = 100f;
     public float Damage = 10f;
     public float MovementSpeed = 2f;
     public float stopDistance = 1f;
     public float enemyDetectionRadius = 1f;
+
+    [Header("Взрыв при достижении базы")]
+    public float explosionDamage = 50f; // Большой урон при взрыве
+    public float explosionRadius = 3f; // Радиус взрыва
+    public GameObject explosionEffect; // Опционально: эффект взрыва
 
     private bool _hasReachedBase = false;
     private bool _isInCombat = false;
@@ -58,7 +63,7 @@ public class EnemyController : MonoBehaviour
                 if (_currentTarget.CompareTag("Base"))
                 {
                     _hasReachedBase = true;
-                    StartAttack(_currentTarget);
+                    ExplodeAtBase(); // ВЗРЫВАЕМСЯ вместо обычной атаки
                 }
                 else if (_currentTarget.CompareTag("Robot"))
                 {
@@ -206,6 +211,54 @@ public class EnemyController : MonoBehaviour
                 robotHealth.TakeDamage(Damage);
             }
         }
+    }
+
+    // НОВЫЙ МЕТОД: Взрыв при достижении базы
+    void ExplodeAtBase()
+    {
+        Debug.Log($"💥 {gameObject.name} взрывается у базы! Урон: {explosionDamage}");
+
+        // Наносим урон базе
+        if (_baseTarget != null)
+        {
+            BaseHealth baseHealth = _baseTarget.GetComponent<BaseHealth>();
+            if (baseHealth != null)
+            {
+                baseHealth.TakeDamage(explosionDamage);
+            }
+        }
+
+        // Наносим урон всем объектам в радиусе взрыва
+        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+        foreach (Collider2D collider in hitObjects)
+        {
+            if (collider.CompareTag("Robot"))
+            {
+                EntManager robot = collider.GetComponent<EntManager>();
+                if (robot != null)
+                {
+                    robot.TakeDamage(explosionDamage * 0.5f); // Половина урона роботам
+                    Debug.Log($"Робот получил урон от взрыва: {explosionDamage * 0.5f}");
+                }
+            }
+            else if (collider.CompareTag("Enemy") && collider.gameObject != gameObject)
+            {
+                EnemyController enemy = collider.GetComponent<EnemyController>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(explosionDamage * 0.3f); // Маленький урон другим врагам
+                }
+            }
+        }
+
+        // Создаем эффект взрыва (если назначен)
+        if (explosionEffect != null)
+        {
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        }
+
+        // Уничтожаем врага
+        Die();
     }
 
     public void TakeDamage(float damage)
