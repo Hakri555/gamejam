@@ -34,5 +34,31 @@ public class BaseHealth : MonoBehaviour, IDamageable
         CurrentHealth -= damage;
         Debug.Log("База получила урон: " + damage);
 
+        if (_spriteRenderer != null)
+        {
+            StartCoroutine(DamageFlash());
+        }
+
+        OnBaseDamaged?.Invoke();
+        
+        if (CurrentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    // Реализация мигания красным, когда идет урон
+    private System.Collections.IEnumerator DamageFlash()
+    {
+        _spriteRenderer.color = damageColor;
+        yield return new WaitForSeconds(flashDuration);
+        _spriteRenderer.color = _originalColor;
+    }
+
+    private void Die()
+    {
+        OnBaseDestroyed?.Invoke();
+        // Временное решение (пока не решили концовку)
+        gameObject.SetActive(false);
     }
 }

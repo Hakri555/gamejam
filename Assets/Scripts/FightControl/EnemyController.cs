@@ -1,105 +1,200 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 public class EnemyController : MonoBehaviour
 {
     [Header("Характеристики врага")]
     public float Health = 100f;
     public float Damage = 10f;
-    public float Speed = 2f;
+    public float MovementSpeed = 2f;
+    public float stopDistance = 0.3f;
+    public float enemyDetectionRadius = 0.8f;
 
-    [Range(0, 100)]
-    public float DefencePrecent = 0f; // Процент защиты
-    public float AttackSpeed = 1f; // Атак в секунду
+    private bool _hasReachedBase = false;
+    private bool _isInCombat = false;
+    private Transform _baseTarget;
+    private Coroutine _attackCoroutine;
+    private GameObject _currentTarget;
+    private Bounds _baseBounds;
 
-    private bool canAttack = true;
-    private Transform baseTarget;
-
-    private void Start()
+    void Start()
     {
         GameObject baseObject = GameObject.FindGameObjectWithTag("Base");
         if (baseObject != null)
         {
-            baseTarget = baseObject.transform;
+            _baseTarget = baseObject.transform;
+            _currentTarget = baseObject;
+
+            Collider2D baseCollider = baseObject.GetComponent<Collider2D>();
+            if (baseCollider != null)
+            {
+                _baseBounds = baseCollider.bounds;
+            }
+        }
+    }
+
+    void Update()
+    {
+        if (_hasReachedBase || _isInCombat) return;
+
+        CheckForObstacles();
+
+        if (_currentTarget != null)
+        {
+            Vector3 targetPosition = GetTargetPosition(_currentTarget);
+            float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
+
+            if (distanceToTarget > stopDistance)
+            {
+                transform.position = Vector3.MoveTowards(
+                    transform.position,
+                    targetPosition,
+                    MovementSpeed * Time.deltaTime
+                );
+            }
+            else
+            {
+                if (_currentTarget.CompareTag("Base"))
+                {
+                    _hasReachedBase = true;
+                    StartAttack(_currentTarget);
+                }
+                else if (_currentTarget.CompareTag("Robot"))
+                {
+                    _isInCombat = true;
+                    StartAttack(_currentTarget);
+                }
+            }
+        }
+    }
+
+    Vector3 GetTargetPosition(GameObject target)
+    {
+        if (target.CompareTag("Base") && _baseBounds.size != Vector3.zero)
+        {
+            return GetClosestPointOnBounds(_baseBounds, transform.position);
         }
         else
         {
-            Debug.LogError("Нет объекта с тегом Base");
+            return target.transform.position;
         }
     }
 
-    private void Update()
+    private Vector3 GetClosestPointOnBounds(Bounds bounds, Vector3 point)
     {
-        if (baseTarget != null)
+        Vector3 closestInside = bounds.ClosestPoint(point);
+
+        if (bounds.Contains(point))
         {
-            transform.position = Vector3.MoveTowards(transform.position, baseTarget.position, Speed * Time.deltaTime);
+            float distToLeft = Mathf.Abs(point.x - bounds.min.x);
+            float distToRight = Mathf.Abs(point.x - bounds.max.x);
+            float distToBottom = Mathf.Abs(point.y - bounds.min.y);
+            float distToTop = Mathf.Abs(point.y - bounds.max.y);
+
+            float minDist = Mathf.Min(distToLeft, distToRight, distToBottom, distToTop);
+
+            if (minDist == distToLeft) return new Vector3(bounds.min.x, point.y, point.z);
+            if (minDist == distToRight) return new Vector3(bounds.max.x, point.y, point.z);
+            if (minDist == distToBottom) return new Vector3(point.x, bounds.min.y, point.z);
+            return new Vector3(point.x, bounds.max.y, point.z);
         }
 
+        return closestInside;
     }
 
-    // Метод атаки при столкновении коллайдеров
-    private void OnTriggerEnter2D(Collider2D collision)
+    void CheckForObstacles()
     {
-        if (collision.CompareTag("Base"))
+        Collider2D[] nearbyObjects = Physics2D.OverlapCircleAll(transform.position, enemyDetectionRadius);
+
+        GameObject closestRobot = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Collider2D collider in nearbyObjects)
         {
-            StartCoroutine(AttackRoutine(collision.gameObject));
+            if (collider.CompareTag("Robot"))
+            {
+                float distance = Vector3.Distance(transform.position, collider.transform.position);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestRobot = collider.gameObject;
+                }
+            }
         }
-        else if (collision.CompareTag("Robot"))
+
+        if (closestRobot != null)
         {
-            StartCoroutine(AttackRoutine(collision.gameObject));
+            _currentTarget = closestRobot;
+        }
+        else
+        {
+            if (_baseTarget != null)
+            {
+                _currentTarget = _baseTarget.gameObject;
+            }
         }
     }
 
-    private IEnumerator AttackRoutine(GameObject target)
+    void StartAttack(GameObject target)
+    {
+        if (_attackCoroutine == null && target != null)
+        {
+            _attackCoroutine = StartCoroutine(AttackRoutine(target));
+        }
+    }
+
+    IEnumerator AttackRoutine(GameObject target)
     {
         while (target != null && Health > 0)
         {
-            if (canAttack)
+            Attack(target);
+            yield return new WaitForSeconds(1f);
+        }
+
+        _attackCoroutine = null;
+
+        if (target == null || target.CompareTag("Robot"))
+        {
+            _isInCombat = false;
+            _currentTarget = _baseTarget != null ? _baseTarget.gameObject : null;
+        }
+    }
+
+    void Attack(GameObject target)
+    {
+        if (target.CompareTag("Base"))
+        {
+            BaseHealth baseHealth = target.GetComponent<BaseHealth>();
+            if (baseHealth != null)
             {
-                Attack(target);
-                canAttack = false;
-                yield return new WaitForSeconds(1f / AttackSpeed);
-                canAttack = true;
+                baseHealth.TakeDamage(Damage);
             }
-            yield return null;
+        }
+        else if (target.CompareTag("Robot"))
+        {
+            EntManager robotHealth = target.GetComponent<EntManager>();
+            if (robotHealth != null)
+            {
+                robotHealth.TakeDamage(Damage);
+            }
         }
     }
 
-    private void Attack(GameObject target)
+    public void TakeDamage(float damage)
     {
-        IDamageable damageable = target.GetComponent<IDamageable>();
-        if (damageable != null)
-        {
-            damageable.TakeDamage(Damage);
-            Debug.Log("Нанесен урон " + Damage);
-        }
-        else
-        {
-            Debug.LogWarning("У объекта " + target.name + " нет IDamageable.");
-        }
-    }
-
-    public void TakeDamage(float incomingDamage)
-    {
-        float damageMultiplier = 1f - (DefencePrecent / 100f);
-        float actualDamage = incomingDamage * damageMultiplier;
-
-        Health -= actualDamage;
-        Debug.Log("Получено урона " + actualDamage);
-
-        if (Health < 0f)
+        Health -= damage;
+        if (Health <= 0)
         {
             Die();
         }
     }
 
-    private void Die()
+    void Die()
     {
+        if (_attackCoroutine != null)
+        {
+            StopCoroutine(_attackCoroutine);
+        }
         Destroy(gameObject);
     }
-
-
 }
