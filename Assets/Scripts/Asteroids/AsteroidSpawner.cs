@@ -34,8 +34,8 @@ public class AsteroidSpawner : MonoBehaviour
         }
         else if (spawnerTier == 2)
         {
-            minNumOfOre = 15 + upgradeState.asteroidOreNum * 2;
-            maxNumOfOre = 20 + upgradeState.asteroidOreNum * 2;
+            minNumOfOre = 1 + upgradeState.asteroidOreNum * 2;
+            maxNumOfOre = 3 + upgradeState.asteroidOreNum * 2;
             minSpawnTime = 50;
             maxSpawnTime = 100;
         }
@@ -54,8 +54,8 @@ public class AsteroidSpawner : MonoBehaviour
             if (minSpawnTime == 0) break;
             yield return new WaitForSeconds(Random.Range(minSpawnTime-upgradeState.asteroidSpawnRate, maxSpawnTime-upgradeState.asteroidSpawnRate));
             float chance = Random.value;
-            Asteroid newAsteroid = Asteroid.Instantiate(asteroid, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
-            newAsteroid.asteroidInfo.speed = Random.Range(0.5f, 0.7f);
+            Asteroid newAsteroid = Asteroid.Instantiate(asteroid, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+            newAsteroid.asteroidInfo.speed = Random.Range(0.5f, 0.6f);
             UpgradeState.RaritySpread rarity = null;
             switch (spawnerTier){
                 case 0:
