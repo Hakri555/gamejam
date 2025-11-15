@@ -6,9 +6,9 @@ public class EnemyController : MonoBehaviour
     [Header("Характеристики врага")]
     public float Health = 100f;
     public float Damage = 10f;
-    public float MovementSpeed = 2f;
-    public float stopDistance = 1f;
-    public float enemyDetectionRadius = 1f;
+    public float MovementSpeed = 0.8f;
+    public float stopDistance = 1.5f;
+    public float enemyDetectionRadius = 1.5f;
 
     [Header("Взрыв при достижении базы")]
     public float explosionDamage = 50f;
