@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2600481096326466872}
   - component: {fileID: 359641855499648586}
   - component: {fileID: 2445976981985399696}
+  - component: {fileID: -3652658353408348081}
   m_Layer: 0
   m_Name: EnemyRobot1
   m_TagString: Enemy
@@ -138,3 +139,33 @@ MonoBehaviour:
   MovementSpeed: 2
   stopDistance: 1
   enemyDetectionRadius: 1
+  explosionDamage: 50
+  explosionRadius: 3
+  explosionEffect: {fileID: 0}
+--- !u!50 &-3652658353408348081
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319278681821656858}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
