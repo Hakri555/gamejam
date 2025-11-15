@@ -5,109 +5,69 @@ using TMPro;
 using DG.Tweening;
 
 public class DraggableCard : MonoBehaviour,
-    IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, IPointerEnterHandler
+    IBeginDragHandler, IDragHandler, IEndDragHandler,
+    IPointerEnterHandler, IPointerClickHandler
+
 {
-
-
+    [Header("Card Data")]
     public CardData cardData;
-
-    [Header("Card UI References")]
-    private Image cardBackground;     // фон карты
-    private Image cardImage;          // арт карты
-    private TextMeshProUGUI nameText;
-    private TextMeshProUGUI descriptionText;
-    private TextMeshProUGUI attackText;
-    private TextMeshProUGUI healthText;
-
-    [Header("Extra UI")]
-    public GameObject actionButton;  // кнопка, появляющаяся при нажатии
+    public GameObject actionButton;
 
     [Header("Drag Settings")]
-    public bool returnToStartPosition = true;
     public float dragSpeed = 1f;
 
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
+
     private Vector2 startPosition;
+    private int startSiblingIndex;
     private Transform startParent;
 
+    private LayoutGroup parentLayoutGroup;
+    private ContentSizeFitter parentSizeFitter;
 
-    private bool isAnimated = false;
+    private GameObject prefab;
     private bool isClicked = false;
 
-
-    // ----------------------------------------------
-    // INIT
-    // ----------------------------------------------
 
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-
+        actionButton.SetActive(false);
         if (canvasGroup == null)
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
+
+        startParent = transform.parent;   // но позицию НЕ сохраняем здесь
+        prefab = cardData != null ? cardData.prefab : null;
     }
 
     void Start()
     {
-        canvas = GetComponentInParent<Canvas>();
+        startParent = transform.parent;
+        startSiblingIndex = transform.GetSiblingIndex();
+        startPosition = rectTransform.anchoredPosition;
 
-        if (actionButton != null)
-            actionButton.SetActive(false);
-
-        if (cardData != null)
-            UpdateCardUI();
+        parentLayoutGroup = startParent.GetComponent<LayoutGroup>();
+        parentSizeFitter = startParent.GetComponent<ContentSizeFitter>();
     }
 
-    // ----------------------------------------------
-    // SET DATA
-    // ----------------------------------------------
-
-    public void InitializeCard(CardData data)
-    {
-        cardData = data;
-        UpdateCardUI();
-    }
-
-    private void UpdateCardUI()
-    {
-        if (cardData == null) return;
-
-        if (nameText) nameText.text = cardData.cardName;
-        if (descriptionText) descriptionText.text = cardData.description;
-
-        if (attackText)
-            attackText.text = cardData.cardType == CardType.Creature ? cardData.attack.ToString() : string.Empty;
-
-        if (healthText)
-            healthText.text = cardData.cardType == CardType.Creature ? cardData.health.ToString() : string.Empty;
-
-        if (cardImage && cardData.cardArt)
-            cardImage.sprite = cardData.cardArt;
-
-        if (cardBackground && cardData.cardBackground)
-            gameObject.GetComponent<Image>().sprite = cardData.cardBackground;
-
-        if (cardBackground)
-            cardBackground.color = cardData.tintColor;
-    }
-
-    // ----------------------------------------------
-    // DRAGGING
-    // ----------------------------------------------
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        startPosition = rectTransform.anchoredPosition;
-        startParent = transform.parent;
-
-        canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.7f;
+        canvasGroup.blocksRaycasts = false;
 
+        // Отключаем layout, чтобы он не дергал карточку во время перетаскивания
+        if (parentLayoutGroup != null) parentLayoutGroup.enabled = false;
+        if (parentSizeFitter != null) parentSizeFitter.enabled = false;
+
+        // Переносим карточку на Canvas (с сохранением мировой позиции)
         transform.SetParent(canvas.transform, true);
     }
+
+
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -127,68 +87,76 @@ public class DraggableCard : MonoBehaviour,
         rectTransform.position = canvas.transform.TransformPoint(pos);
     }
 
+
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
-        if (returnToStartPosition && transform.parent == canvas.transform)
+        DropSlot nearest = null;
+        float minDist = float.MaxValue;
+
+        // Ищем ближайший DropSlot
+        foreach (DropSlot slot in FindObjectsOfType<DropSlot>())
         {
-            rectTransform.anchoredPosition = startPosition;
-            transform.SetParent(startParent, true);
+            float dist = Vector2.Distance(rectTransform.position, slot.transform.position);
+            if (dist < minDist && dist < 1f)
+            {
+                minDist = dist;
+                nearest = slot;
+            }
         }
+
+        if (nearest != null)
+        {
+            // Создаём prefab в слоте
+            if (prefab != null)
+                Instantiate(prefab, nearest.transform.position, Quaternion.identity);
+        }
+
+        // В любом случае карта возвращается
+        ReturnToHand();
     }
 
-    // ----------------------------------------------
-    // HELPERS
-    // ----------------------------------------------
 
-    public void ResetPosition()
+    private void ReturnToHand()
     {
-        rectTransform.anchoredPosition = startPosition;
+        if (startParent == null) return;
+
+        // 1. Сохраняем текущую мировую позицию
+        Vector3 worldBefore = rectTransform.position;
+
+        // 2. Отключаем layout на родителе
+        if (parentLayoutGroup != null) parentLayoutGroup.enabled = false;
+        if (parentSizeFitter != null) parentSizeFitter.enabled = false;
+
+        // 3. Репарентим обратно в Content с сохранением мировой позиции
         transform.SetParent(startParent, true);
+
+        // 4. Форсируем rebuild layout, чтобы получить target-позицию
+        LayoutRebuilder.ForceRebuildLayoutImmediate(startParent as RectTransform);
+
+        // 5. Целевая мировая позиция
+        Vector3 worldTarget = rectTransform.position;
+
+        // 6. Ставим обратно на визуальную позицию перед анимацией
+        rectTransform.position = worldBefore;
+
+        // 7. Анимируем в target
+        rectTransform.DOMove(worldTarget, 0.25f).SetEase(Ease.OutQuad).OnComplete(() =>
+        {
+            // 8. Включаем layout обратно
+            if (parentLayoutGroup != null) parentLayoutGroup.enabled = true;
+            if (parentSizeFitter != null) parentSizeFitter.enabled = true;
+
+            // 9. Фиксируем локальную позицию
+            rectTransform.anchoredPosition = rectTransform.anchoredPosition;
+
+            // Форсируем rebuild, чтобы layout переставил элементы
+            LayoutRebuilder.ForceRebuildLayoutImmediate(startParent as RectTransform);
+        });
     }
 
-    public void SetNewParent(Transform newParent)
-    {
-        startParent = newParent;
-        transform.SetParent(newParent, true);
-        rectTransform.anchoredPosition = Vector2.zero;
-    }
-
-    public CardData GetCardData() => cardData;
-
-    // ----------------------------------------------
-    // LOGIC
-    // ----------------------------------------------
-
-    //public virtual void oncardplayed()
-    //{
-    //    debug.log($"играна карта: {carddata.cardname}");
-
-    //    switch (carddata.cardtype)
-    //    {
-    //        case cardtype.creature:
-    //            debug.log("существо выходит на поле.");
-    //            break;
-
-    //        case cardtype.spell:
-    //            debug.log("применено заклинание.");
-    //            break;
-
-    //        case cardtype.equipment:
-    //            debug.log("экипировано снаряжение.");
-    //            break;
-
-    //        case cardtype.resource:
-    //            debug.log("использован ресурс.");
-    //            break;
-    //    }
-    //}
-
-    // ----------------------------------------------
-    // CLICK
-    // ----------------------------------------------
 
     public float hoverScale = 1.1f;     // во сколько увеличить
     public float duration = 0.2f;       // длительность анимации
@@ -214,15 +182,12 @@ public class DraggableCard : MonoBehaviour,
         seq.Append(rectTransform.DORotate(Vector3.zero, 0.2f).SetEase(Ease.InQuad));
     }
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        // можно оставить пустым или вернуть масштаб сразу
-        // rectTransform.DOScale(1f, duration).SetEase(Ease.OutQuad);
-    }
+
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (isClicked == false && actionButton != null)
+        canvasGroup.blocksRaycasts = true;
+        if (isClicked == false )
         {
             actionButton.SetActive(true);
             isClicked = true;
@@ -233,4 +198,5 @@ public class DraggableCard : MonoBehaviour,
             actionButton.SetActive(false);
         }
     }
+   
 }

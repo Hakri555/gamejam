@@ -93,6 +93,9 @@ MonoBehaviour:
   actionButton: {fileID: 1909628264844771840}
   returnToStartPosition: 1
   dragSpeed: 1
+  dropLayer:
+    serializedVersion: 2
+    m_Bits: 64
   hoverScale: 1.1
   duration: 0.2
   delayBetween: 5

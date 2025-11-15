@@ -1,94 +1,130 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\",
+  "WorkspaceRootPath": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|c:\\users\\hakri\\studies\\unity\\gamejam\\assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\waveui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\waveui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|c:\\users\\vovapase\\desktop\\gamejam1\\gamejam\\assets\\scripts\\the hand\\grabberlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\the hand\\grabberlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\mainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\mainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\movementconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\waveui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\waveui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\dropslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\dropslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\statsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\statsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\movementconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\movementconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\statsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\statsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\mainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\mainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\waveui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\waveui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\basehealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,11 +138,153 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "GrabberLogic.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\The hand\\GrabberLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\The hand\\GrabberLogic.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\The hand\\GrabberLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\The hand\\GrabberLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T19:42:15.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DoorController.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\DoorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\DoorController.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\DoorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\DoorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:19.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EntityManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:20.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WaveUI.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\WaveUI.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\WaveUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:20.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\WaveManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\WaveManager.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwFgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:19.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Turret.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Turret.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\Turret.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Turret.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\Turret.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwHQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:19.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\Bullet.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\Bullet.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:18.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "TuretPlacer.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:18.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DropSlot.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\DropSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\DropSlot.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\DropSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\DropSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:20:52.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AttackConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:29:25.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EntityMoveManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T19:40:47.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TuretPlacer.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,11 +292,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 24,
               "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\Bullet.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\Bullet.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\Bullet.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,11 +304,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "Turret.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\Turret.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Turret.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\Turret.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\Turret.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\Turret.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\Turret.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAmwHQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -138,11 +316,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "DoorController.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\DoorController.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\DoorController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\DoorController.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\DoorController.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\DoorController.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\DoorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -150,11 +328,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
               "Title": "WaveUI.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\WaveUI.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\WaveUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -162,11 +340,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 26,
               "Title": "WaveManager.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\WaveManager.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\WaveManager.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAwFgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -174,132 +352,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AttackConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:37:16.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BulletStats.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:37:14.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EnitiyStateManager.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:36:58.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EntityMoveManager.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:35:31.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnemyController.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\EnemyController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\EnemyController.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\EnemyController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FightControl\\EnemyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:18:49.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EntityMoveManager.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:44:12.524Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "StatsConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:00:26.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MovementConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:00:25.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MainConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:00:24.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BulletStats.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:00:04.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "AttackConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -307,11 +364,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
+              "Title": "BulletStats.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T12:37:14.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EnitiyStateManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T12:36:58.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EntityMoveManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:44:12.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\EnemyController.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FightControl\\EnemyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T12:18:49.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StatsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\StatsConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:00:26.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MovementConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\MovementConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:00:25.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainConfig.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\MainConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:00:24.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BulletStats.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:00:04.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BaseHealth.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -319,11 +472,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "EnitiyStateManager.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -331,11 +484,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "EntityManager.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,23 +496,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IDamageable.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\IDamageable.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\IDamageable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\IDamageable.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\IDamageable.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\IDamageable.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\IDamageable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T10:43:51.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 29,
               "Title": "BaseHealth.cs",
-              "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
+              "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
-              "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
+              "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
