@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|c:\\users\\hakri\\studies\\unity\\gamejam\\assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|c:\\users\\hakri\\studies\\unity\\gamejam\\assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turetplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|c:\\users\\hakri\\studies\\unity\\gamejam\\assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fightcontrol\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\fightcontrol\\doorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,14 +71,6 @@
       "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\attackconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\so\\bulletstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -98,11 +98,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TuretPlacer.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\TuretPlacer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
@@ -110,12 +110,11 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T21:58:56.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T21:58:56.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\Bullet.cs",
@@ -123,12 +122,11 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\Bullet.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T21:31:03.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T21:31:03.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Turret.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\Turret.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\Turret.cs",
@@ -140,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DoorController.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\DoorController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\DoorController.cs",
@@ -152,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "WaveUI.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\WaveUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\WaveUI.cs",
@@ -164,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "WaveManager.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\WaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\WaveManager.cs",
@@ -176,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AttackConfig.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
@@ -188,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "BulletStats.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
@@ -200,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "EnitiyStateManager.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
@@ -212,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "EntityMoveManager.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
@@ -224,15 +222,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\EnemyController.cs",
               "ToolTip": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\EnemyController.cs",
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\EnemyController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:18:49.184Z"
+              "WhenOpened": "2025-11-14T12:18:49.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -284,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "BulletStats.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
@@ -296,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "AttackConfig.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
@@ -308,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "BaseHealth.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
@@ -320,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "EnitiyStateManager.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
@@ -332,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EntityManager.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
@@ -356,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "BaseHealth.cs",
               "DocumentMoniker": "C:\\Users\\Hakri\\Studies\\Unity\\GameJam\\Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
