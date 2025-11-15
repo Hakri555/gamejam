@@ -6,15 +6,17 @@ public class EnemyController : MonoBehaviour
     [Header("Характеристики врага")]
     public float Health = 100f;
     public float Damage = 10f;
-    public float MovementSpeed = 2f;
+    public float MovementSpeed = 1f;
     public float stopDistance = 1f;
     public float enemyDetectionRadius = 1f;
 
     [Header("Взрыв при достижении базы")]
-    public float explosionDamage = 50f; // Большой урон при взрыве
-    public float explosionRadius = 3f; // Радиус взрыва
-    public GameObject explosionEffect; // Опционально: эффект взрыва
+    public float explosionDamage = 50f;
+    public float explosionRadius = 3f;
+    public GameObject explosionEffect;
 
+    // Добавляем ссылку на Animator
+    private Animator _animator;
     private bool _hasReachedBase = false;
     private bool _isInCombat = false;
     private bool _isStoppedByEnemy = false;
@@ -22,9 +24,20 @@ public class EnemyController : MonoBehaviour
     private Coroutine _attackCoroutine;
     private GameObject _currentTarget;
     private Bounds _baseBounds;
+    private Vector3 _lastPosition;
+    private float _currentSpeed;
 
     void Start()
     {
+        // Получаем компонент Animator
+        _animator = GetComponent<Animator>();
+        if (_animator == null)
+        {
+            Debug.LogError("❌ У врага нет компонента Animator!");
+        }
+
+        _lastPosition = transform.position;
+
         GameObject baseObject = GameObject.FindGameObjectWithTag("Base");
         if (baseObject != null)
         {
@@ -41,6 +54,12 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        // Рассчитываем скорость движения
+        CalculateMovementSpeed();
+
+        // Обновляем анимации
+        UpdateAnimations();
+
         if (_hasReachedBase) return;
 
         CheckForObstacles();
@@ -63,7 +82,7 @@ public class EnemyController : MonoBehaviour
                 if (_currentTarget.CompareTag("Base"))
                 {
                     _hasReachedBase = true;
-                    ExplodeAtBase(); // ВЗРЫВАЕМСЯ вместо обычной атаки
+                    ExplodeAtBase();
                 }
                 else if (_currentTarget.CompareTag("Robot"))
                 {
@@ -74,6 +93,49 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    // Расчет скорости для анимации
+    void CalculateMovementSpeed()
+    {
+        Vector3 currentPosition = transform.position;
+        _currentSpeed = (currentPosition - _lastPosition).magnitude / Time.deltaTime;
+        _lastPosition = currentPosition;
+    }
+
+    // Обновление параметров аниматора
+    void UpdateAnimations()
+    {
+        if (_animator == null) return;
+
+        // Устанавливаем скорость для анимации ходьбы/покоя
+        _animator.SetFloat("Speed", _currentSpeed);
+
+        // Устанавливаем параметр атаки
+        _animator.SetBool("IsAttacking", _isInCombat);
+
+        // Дополнительно: направление движения для разворота спрайта
+        if (_currentTarget != null && _currentSpeed > 0.1f)
+        {
+            UpdateSpriteDirection();
+        }
+    }
+
+    // Разворот спрайта в направлении движения
+    void UpdateSpriteDirection()
+    {
+        Vector3 direction = _currentTarget.transform.position - transform.position;
+
+        // Разворачиваем спрайт по X
+        if (direction.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1); // Смотрит вправо
+        }
+        else if (direction.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1); // Смотрит влево
+        }
+    }
+
+    // Остальные методы остаются без изменений...
     Vector3 GetTargetPosition(GameObject target)
     {
         if (target.CompareTag("Base") && _baseBounds.size != Vector3.zero)
@@ -213,12 +275,16 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    // НОВЫЙ МЕТОД: Взрыв при достижении базы
     void ExplodeAtBase()
     {
         Debug.Log($"💥 {gameObject.name} взрывается у базы! Урон: {explosionDamage}");
 
-        // Наносим урон базе
+        // Взрывная анимация (если есть)
+        if (_animator != null)
+        {
+            _animator.SetTrigger("Explode");
+        }
+
         if (_baseTarget != null)
         {
             BaseHealth baseHealth = _baseTarget.GetComponent<BaseHealth>();
@@ -228,7 +294,6 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        // Наносим урон всем объектам в радиусе взрыва
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
         foreach (Collider2D collider in hitObjects)
         {
@@ -237,8 +302,7 @@ public class EnemyController : MonoBehaviour
                 EntManager robot = collider.GetComponent<EntManager>();
                 if (robot != null)
                 {
-                    robot.TakeDamage(explosionDamage * 0.5f); // Половина урона роботам
-                    Debug.Log($"Робот получил урон от взрыва: {explosionDamage * 0.5f}");
+                    robot.TakeDamage(explosionDamage * 0.5f);
                 }
             }
             else if (collider.CompareTag("Enemy") && collider.gameObject != gameObject)
@@ -246,24 +310,30 @@ public class EnemyController : MonoBehaviour
                 EnemyController enemy = collider.GetComponent<EnemyController>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(explosionDamage * 0.3f); // Маленький урон другим врагам
+                    enemy.TakeDamage(explosionDamage * 0.3f);
                 }
             }
         }
 
-        // Создаем эффект взрыва (если назначен)
         if (explosionEffect != null)
         {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
         }
 
-        // Уничтожаем врага
-        Die();
+        // Задержка перед уничтожением чтобы анимация успела проиграться
+        Invoke("Die", 0.5f);
     }
 
     public void TakeDamage(float damage)
     {
         Health -= damage;
+
+        // Анимация получения урона
+        if (_animator != null)
+        {
+            _animator.SetTrigger("TakeDamage");
+        }
+
         if (Health <= 0) Die();
     }
 
@@ -271,5 +341,14 @@ public class EnemyController : MonoBehaviour
     {
         if (_attackCoroutine != null) StopCoroutine(_attackCoroutine);
         Destroy(gameObject);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, enemyDetectionRadius);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }
