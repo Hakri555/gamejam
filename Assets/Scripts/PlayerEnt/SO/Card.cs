@@ -1,10 +1,18 @@
+using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 [CreateAssetMenu(fileName = "New Card", menuName = "Cards/Card Data")]
+
+
+
 public class CardData : ScriptableObject
 {
+
     [Header("Main Info")]
     public string cardName;
     public string description;
@@ -28,6 +36,8 @@ public class CardData : ScriptableObject
     [Header("Appearance")]
     public Sprite cardArt;          // главное изображение
     public Color tintColor = Color.white; // цветовая тонировка (если нужна)
+
+
 }
 
 public enum CardType

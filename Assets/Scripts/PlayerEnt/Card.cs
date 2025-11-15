@@ -1,17 +1,39 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using DG.Tweening;
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 using DG.Tweening;
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+
+
+
 
 public class DraggableCard : MonoBehaviour,
     IBeginDragHandler, IDragHandler, IEndDragHandler,
     IPointerEnterHandler, IPointerClickHandler
-
 {
+    [Header("Resouces menu")]
+    public GameObject CardManager;
+    private CardManager _cardManager;
+
+    [Header("Card Dictionary")]
+
+    public List<string> data;
+    public List<int> col;
+    
     [Header("Card Data")]
     public CardData cardData;
     public GameObject actionButton;
+    public GameObject foreGround;
 
     [Header("Drag Settings")]
     public float dragSpeed = 1f;
@@ -30,9 +52,13 @@ public class DraggableCard : MonoBehaviour,
     private GameObject prefab;
     private bool isClicked = false;
 
+    public bool isTurret = false;
+    public bool coudDrag = false;
 
     void Awake()
     {
+        canvas = GetComponentInParent<Canvas>();
+        _cardManager = CardManager.GetComponent<CardManager>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         actionButton.SetActive(false);
@@ -48,7 +74,7 @@ public class DraggableCard : MonoBehaviour,
         startParent = transform.parent;
         startSiblingIndex = transform.GetSiblingIndex();
         startPosition = rectTransform.anchoredPosition;
-
+        foreGround.GetComponent<Image>().sprite = cardData.cardImage;
         parentLayoutGroup = startParent.GetComponent<LayoutGroup>();
         parentSizeFitter = startParent.GetComponent<ContentSizeFitter>();
     }
@@ -56,6 +82,39 @@ public class DraggableCard : MonoBehaviour,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        int i = 0;
+        foreach(var str in data) 
+        {
+            switch (str) 
+            {
+                case "iron":
+                    if (_cardManager.ironN > col[i]) 
+                    {
+                        coudDrag = true;
+                    }
+                    break;
+                case "steel":
+                    if (_cardManager.steelN > col[i])
+                    {
+                        coudDrag = true;
+                    }
+                    break;
+                case "copper":
+                    if (_cardManager.copperN > col[i])
+                    {
+                        coudDrag = true;
+                    }
+                    break;
+                case "adam":
+                    if (_cardManager.AdamantitN > col[i])
+                    {
+                        coudDrag = true;
+                    }
+                    break;
+            }
+        }
+        if (!coudDrag)
+            return;
         canvasGroup.alpha = 0.7f;
         canvasGroup.blocksRaycasts = false;
 
@@ -71,6 +130,8 @@ public class DraggableCard : MonoBehaviour,
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (!coudDrag)
+            return;
         if (canvas == null)
         {
             rectTransform.anchoredPosition += eventData.delta * dragSpeed;
@@ -93,28 +154,77 @@ public class DraggableCard : MonoBehaviour,
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
-        DropSlot nearest = null;
+        GameObject nearest = null;
+       
+        
         float minDist = float.MaxValue;
 
         // Ищем ближайший DropSlot
-        foreach (DropSlot slot in FindObjectsOfType<DropSlot>())
+        if (!isTurret)
         {
-            float dist = Vector2.Distance(rectTransform.position, slot.transform.position);
-            if (dist < minDist && dist < 1f)
+            foreach (DropSlot slot in FindObjectsOfType<DropSlot>())
             {
-                minDist = dist;
-                nearest = slot;
+                float dist = Vector2.Distance(rectTransform.position, slot.transform.position);
+                if (dist < minDist && dist < 1f)
+                {
+                    minDist = dist;
+                    nearest = slot.gameObject;
+                }
             }
         }
+        else 
+        {
 
+            foreach (DropSlotTower slot in FindObjectsOfType<DropSlotTower>())
+            {
+                float dist = Vector2.Distance(rectTransform.position, slot.transform.position);
+                if (dist < minDist && dist < 1f)
+                {
+                    minDist = dist;
+                    nearest = slot.gameObject;
+                }
+            }
+        }
         if (nearest != null)
         {
-            // Создаём prefab в слоте
+            int i = 0;
+            foreach (var str in data)
+            {
+
+                switch (str)
+                {
+                    case "iron":
+                        if (_cardManager.ironN > col[i])
+                        {
+                            _cardManager.SetIronN(_cardManager.data.iron - col[i]);
+                            Debug.Log("хочу железа");
+                        }
+                        break;
+                    case "steel":
+                        if (_cardManager.steelN > col[i])
+                        {
+                            _cardManager.SetSteelN(_cardManager.data.steel - col[i]);
+                        }
+                        break;
+                    case "copper":
+                        if (_cardManager.copperN > col[i])
+                        {
+                            _cardManager.SetCopperN(_cardManager.data.copper - col[i]);
+                        }
+                        break;
+                    case "adam":
+                        if (_cardManager.AdamantitN > col[i])
+                        {
+                            _cardManager.SetAdamantitN(_cardManager.data.adamantium - col[i]);
+
+                        }
+                        break;
+                }
+            }
             if (prefab != null)
                 Instantiate(prefab, nearest.transform.position, Quaternion.identity);
         }
 
-        // В любом случае карта возвращается
         ReturnToHand();
     }
 
@@ -123,39 +233,34 @@ public class DraggableCard : MonoBehaviour,
     {
         if (startParent == null) return;
 
-        // 1. Сохраняем текущую мировую позицию
         Vector3 worldBefore = rectTransform.position;
 
-        // 2. Отключаем layout на родителе
         if (parentLayoutGroup != null) parentLayoutGroup.enabled = false;
         if (parentSizeFitter != null) parentSizeFitter.enabled = false;
 
-        // 3. Репарентим обратно в Content с сохранением мировой позиции
+        // возвращаем в руку
         transform.SetParent(startParent, true);
 
-        // 4. Форсируем rebuild layout, чтобы получить target-позицию
+        // ВОССТАНАВЛИВАЕМ ИСХОДНЫЙ ПОРЯДОК
+        transform.SetSiblingIndex(startSiblingIndex);
+
         LayoutRebuilder.ForceRebuildLayoutImmediate(startParent as RectTransform);
 
-        // 5. Целевая мировая позиция
         Vector3 worldTarget = rectTransform.position;
-
-        // 6. Ставим обратно на визуальную позицию перед анимацией
         rectTransform.position = worldBefore;
 
-        // 7. Анимируем в target
-        rectTransform.DOMove(worldTarget, 0.25f).SetEase(Ease.OutQuad).OnComplete(() =>
-        {
-            // 8. Включаем layout обратно
-            if (parentLayoutGroup != null) parentLayoutGroup.enabled = true;
-            if (parentSizeFitter != null) parentSizeFitter.enabled = true;
+        // анимация возврата
+        rectTransform.DOMove(worldTarget, 0.25f)
+            .SetEase(Ease.OutQuad)
+            .OnComplete(() =>
+            {
+                if (parentLayoutGroup != null) parentLayoutGroup.enabled = true;
+                if (parentSizeFitter != null) parentSizeFitter.enabled = true;
 
-            // 9. Фиксируем локальную позицию
-            rectTransform.anchoredPosition = rectTransform.anchoredPosition;
-
-            // Форсируем rebuild, чтобы layout переставил элементы
-            LayoutRebuilder.ForceRebuildLayoutImmediate(startParent as RectTransform);
-        });
+                LayoutRebuilder.ForceRebuildLayoutImmediate(startParent as RectTransform);
+            });
     }
+
 
 
     public float hoverScale = 1.1f;     // во сколько увеличить

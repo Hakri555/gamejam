@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|c:\\users\\vovapase\\desktop\\gamejam1\\gamejam\\assets\\scripts\\the hand\\grabberlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\the hand\\grabberlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|c:\\users\\vovapase\\desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerent\\entitymovemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|c:\\users\\vovapase\\desktop\\gamejam1\\gamejam\\assets\\scripts\\the hand\\grabberlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\the hand\\grabberlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{221513C9-78B2-055D-D798-A0FF836A30D2}|Assembly-CSharp.csproj|C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\assets\\scripts\\playerent\\enitiystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,11 +134,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GrabberLogic.cs",
               "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\The hand\\GrabberLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\The hand\\GrabberLogic.cs",
@@ -159,8 +159,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\DoorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:19.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:19.464Z"
             },
             {
               "$type": "Document",
@@ -172,8 +171,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:20.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:20.496Z"
             },
             {
               "$type": "Document",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\WaveUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:20.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:20.4Z"
             },
             {
               "$type": "Document",
@@ -198,8 +195,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\WaveManager.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAwFgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:19.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:19.704Z"
             },
             {
               "$type": "Document",
@@ -211,8 +207,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\Turret.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAmwHQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:19.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:19.135Z"
             },
             {
               "$type": "Document",
@@ -224,8 +219,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\Bullet.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:18.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:18.985Z"
             },
             {
               "$type": "Document",
@@ -237,8 +231,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\TuretPlacer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:18.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:18.813Z"
             },
             {
               "$type": "Document",
@@ -262,18 +255,17 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\AttackConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T15:29:25.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T15:29:25.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EntityMoveManager.cs",
               "DocumentMoniker": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
               "ToolTip": "C:\\Users\\vovapase\\Desktop\\gamejam1\\gamejam\\Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EntityMoveManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T19:40:47.514Z",
               "EditorCaption": ""
@@ -464,8 +456,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\SO\\BulletStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:00:04.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T11:00:04.913Z"
             },
             {
               "$type": "Document",
@@ -477,8 +468,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FightControl\\BaseHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:44:01.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T10:44:01.424Z"
             },
             {
               "$type": "Document",
@@ -490,8 +480,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerEnt\\EnitiyStateManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:49:26.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T10:49:26.686Z"
             },
             {
               "$type": "Document",
