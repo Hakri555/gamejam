@@ -12698,19 +12698,39 @@ MonoBehaviour:
   - amount: 20
     type: 1
   - amount: 5
+    type: 4
+  - amount: 2
+    type: 5
+  reachUpgrades:
+  - amount: 8
     type: 1
-  reachUpgrades: []
-  processingUpgrades: []
+  - amount: 15
+    type: 4
+  - amount: 10
+    type: 5
+  processingUpgrades:
+  - amount: 30
+    type: 1
+  - amount: 20
+    type: 4
+  - amount: 15
+    type: 5
+  - amount: 30
+    type: 5
   raritySpreadTier1:
     rid: 1619464428718391296
   raritySpreadTier2:
     rid: 1619464428718391297
   raritySpreadTier3:
     rid: 1619464428718391298
+  resourses: {fileID: 0}
   asteroidSpawnRate: 10
   asteroidOreNum: 0
   clawReach: 20
   clawSpeed: 10
+  speedLevel: 0
+  reachLevel: 0
+  processingLevel: 0
   references:
     version: 2
     RefIds:

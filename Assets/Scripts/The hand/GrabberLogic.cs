@@ -33,9 +33,10 @@ public class GrabberLogic : MonoBehaviour
         isShooting = true;
         moveVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         moveVector = startingPos + (moveVector - startingPos).normalized * upgradeState.clawReach;
-        while ((Vector2)transform.position != moveVector && catchedAsteroid == null) yield return null;
+        while ((Vector2)transform.position != moveVector && catchedAsteroid == null && transform.position.x > 2 && transform.position.x < 8.8f && transform.position.y < 5 && transform.position.y > -3) yield return null;
         moveVector = startingPos;
         while ((Vector2)transform.position != moveVector) yield return null;
+        transform.position = moveVector;
         if (catchedAsteroid != null)
         {
             switch (catchedAsteroid.asteroidInfo.type)
@@ -64,7 +65,7 @@ public class GrabberLogic : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out Asteroid asteroid)) {
+        if (collision.gameObject.TryGetComponent(out Asteroid asteroid) && catchedAsteroid == null) {
             asteroid.objectToFollow = this.gameObject;
             catchedAsteroid = asteroid;
         }

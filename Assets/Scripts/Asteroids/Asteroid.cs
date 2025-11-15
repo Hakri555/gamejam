@@ -18,6 +18,8 @@ public class Asteroid : MonoBehaviour
     public const int COPPER = 1;
     public const int COAL = 2;
     public const int ADAMANTIUM = 3;
+    public const int STEEL = 4;
+    public const int HELLISHSTEEL = 5;
     public const int SMALL = 0;
     public const int MEDIUM = 1;
     public const int LARGE = 2;
@@ -50,9 +52,9 @@ public class Asteroid : MonoBehaviour
         
         switch (asteroidInfo.size)
         {
-            case SMALL: transform.localScale = new Vector3(.8f, .8f, .8f); break;
-            case MEDIUM: transform.localScale = new Vector3(1, 1, 1); break;
-            case LARGE: transform.localScale = new Vector3(1.2f, 1.2f, 1.2f); break;
+            case SMALL: transform.localScale = new Vector3(.4f, .4f, .4f); break;
+            case MEDIUM: transform.localScale = new Vector3(.6f, .6f, .6f); break;
+            case LARGE: transform.localScale = new Vector3(1, 1, 1); break;
             default : transform.localScale = Vector3.one; break;
         }
     }
