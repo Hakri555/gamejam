@@ -17,7 +17,7 @@ public class HandLogic : MonoBehaviour
     {
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0;
-        if (!grabberLogic.isShooting && mouseWorldPos.x > 2 && mouseWorldPos.x < 8.8f && mouseWorldPos.y < 5 && mouseWorldPos.y > -3)
+        if (!grabberLogic.isShooting && mouseWorldPos.x > 2 && mouseWorldPos.x < 8.8f && mouseWorldPos.y < 5 && mouseWorldPos.y > -2.2f)
         {
             Vector2 direction = (mouseWorldPos - transform.position).normalized;
 
@@ -27,7 +27,7 @@ public class HandLogic : MonoBehaviour
 
             transform.rotation = Quaternion.Euler(0, 0, currentAngle - 90);
         }
-        else if (!grabberLogic.isShooting && (mouseWorldPos.x < 2 || mouseWorldPos.x > 8.8f || mouseWorldPos.y > 5 || mouseWorldPos.y < -3))
+        else if (!grabberLogic.isShooting && (mouseWorldPos.x < 2 || mouseWorldPos.x > 8.8f || mouseWorldPos.y > 5 || mouseWorldPos.y < -2.2f))
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 0), RotationSmoothingCoef*Time.deltaTime);
         }

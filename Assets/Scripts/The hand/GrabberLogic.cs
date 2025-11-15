@@ -18,10 +18,12 @@ public class GrabberLogic : MonoBehaviour
     }
     private void Update()
     {
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPos.z = 0;
         if (isShooting) {
             transform.position = Vector2.MoveTowards(transform.position, moveVector, upgradeState.clawSpeed * Time.deltaTime);
         }
-        else if (Input.GetMouseButtonDown(0))
+        else if (Input.GetMouseButtonDown(0) && mouseWorldPos.x > 2 && mouseWorldPos.x < 8.8f && mouseWorldPos.y < 5 && mouseWorldPos.y > -2.4f)
         {
             StartCoroutine(shootOut());
         }

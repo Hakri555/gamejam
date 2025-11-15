@@ -28,5 +28,6 @@ public class ProgressBarLogic : MonoBehaviour
             image.fillAmount = (Time.time - startingTime)/time;
             yield return null;
         }
+        image.fillAmount = 0;
     }
 }

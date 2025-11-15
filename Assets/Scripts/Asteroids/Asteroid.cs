@@ -31,6 +31,7 @@ public class Asteroid : MonoBehaviour
         public int size;
     }
     public asteroid asteroidInfo;
+    
 
     private void Awake()
     {
