@@ -15,6 +15,9 @@ public class EnemyController : MonoBehaviour
     public float explosionRadius = 3f;
     public GameObject explosionEffect;
 
+    [Header("Настройки смерти")]
+    public float deathDelay = 0.5f;
+
     private Animator _animator;
     private bool _hasReachedBase = false;
     private bool _isInCombat = false;
@@ -345,7 +348,22 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
-        if (_attackCoroutine != null) StopCoroutine(_attackCoroutine);
-        Destroy(gameObject);
+        if (_attackCoroutine != null)
+            StopCoroutine(_attackCoroutine);
+
+        _hasReachedBase = true;
+        _isInCombat = false;
+        _isStoppedByEnemy = true;
+
+        if (_animator != null)
+        {
+            _animator.SetTrigger("Die");
+            _animator.SetFloat("Speed", 0f);
+            _animator.SetBool("IsAttacking", false);
+        }
+
+        this.enabled = false;
+
+        Destroy(gameObject, deathDelay);
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ebb1d4183a704904c99f45d34de9893c
+guid: 88af9660922be1d42b3a774e1e64e857
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B1_Idle-Sheet-Sheet_0
+      name: GreenRobot_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,17 +111,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 225bb1979f4408041a27ef60cd69d9b3
-      internalID: -893383598
+      spriteID: fa7fbf1600367dc429c440e7be50768a
+      internalID: -2015891590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B1_Idle-Sheet-Sheet_1
+      name: GreenRobot_1
       rect:
         serializedVersion: 2
-        x: 803
+        x: 800
         y: 0
         width: 800
         height: 800
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 829ec4df425084f4585d1ed7aef4b7e9
-      internalID: 1543317007
+      spriteID: ee753425115398448a045aec2f37216d
+      internalID: -201705819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B1_Idle-Sheet-Sheet_2
+      name: GreenRobot_2
       rect:
         serializedVersion: 2
         x: 1600
@@ -153,17 +153,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bc75bb99419254b94aff19ddcdfcf0
-      internalID: 2025853566
+      spriteID: da3232998b3c5ef4f98f7283d976d751
+      internalID: 2079042087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B1_Idle-Sheet-Sheet_3
+      name: GreenRobot_3
       rect:
         serializedVersion: 2
-        x: 2392
+        x: 2400
         y: 0
         width: 800
         height: 800
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46e6955095210354f97e9804e8a6fcc7
-      internalID: 317843696
+      spriteID: e7403f3850fc27a41b5b4223c5e652e2
+      internalID: 236136930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B1_Idle-Sheet-Sheet_4
+      name: GreenRobot_4
       rect:
         serializedVersion: 2
         x: 3200
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0753847abfe0d8144adc4f6695791982
-      internalID: 968537654
+      spriteID: e614304efb104c84590bf216058c4eeb
+      internalID: 1106141520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B1_Idle-Sheet-Sheet_5
+      name: GreenRobot_5
       rect:
         serializedVersion: 2
         x: 4000
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3f56011d57edc141aee5e8be899644f
-      internalID: -1659523003
+      spriteID: 0e82cb7dfa79bf94f8d8f3573048529e
+      internalID: -1457036001
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      B1_Idle-Sheet-Sheet_0: -893383598
-      B1_Idle-Sheet-Sheet_1: 1543317007
-      B1_Idle-Sheet-Sheet_2: 2025853566
-      B1_Idle-Sheet-Sheet_3: 317843696
-      B1_Idle-Sheet-Sheet_4: 968537654
-      B1_Idle-Sheet-Sheet_5: -1659523003
+      GreenRobot_0: -2015891590
+      GreenRobot_1: -201705819
+      GreenRobot_2: 2079042087
+      GreenRobot_3: 236136930
+      GreenRobot_4: 1106141520
+      GreenRobot_5: -1457036001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
