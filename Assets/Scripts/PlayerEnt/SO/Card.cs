@@ -18,6 +18,7 @@ public class CardData : ScriptableObject
     public TextMeshProUGUI attackText;
     public TextMeshProUGUI healthText;
 
+    public GameObject prefab;
 
     [Header("Stats")]
     public int manaCost;

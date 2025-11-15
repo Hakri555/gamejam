@@ -21,6 +21,7 @@ MonoBehaviour:
   descriptionText: {fileID: 0}
   attackText: {fileID: 0}
   healthText: {fileID: 0}
+  prefab: {fileID: 319278681821656858, guid: 99edf79ed366fd9419766550ef970b7e, type: 3}
   manaCost: 0
   attack: 0
   health: 0
