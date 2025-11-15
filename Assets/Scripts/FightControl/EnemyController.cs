@@ -6,7 +6,7 @@ public class EnemyController : MonoBehaviour
     [Header("Характеристики врага")]
     public float Health = 100f;
     public float Damage = 10f;
-    public float MovementSpeed = 1f;
+    public float MovementSpeed = 2f;
     public float stopDistance = 1f;
     public float enemyDetectionRadius = 1f;
 
@@ -15,7 +15,6 @@ public class EnemyController : MonoBehaviour
     public float explosionRadius = 3f;
     public GameObject explosionEffect;
 
-    // Добавляем ссылку на Animator
     private Animator _animator;
     private bool _hasReachedBase = false;
     private bool _isInCombat = false;
@@ -26,16 +25,11 @@ public class EnemyController : MonoBehaviour
     private Bounds _baseBounds;
     private Vector3 _lastPosition;
     private float _currentSpeed;
+    private bool _wantsToMove = true;
 
     void Start()
     {
-        // Получаем компонент Animator
         _animator = GetComponent<Animator>();
-        if (_animator == null)
-        {
-            Debug.LogError("❌ У врага нет компонента Animator!");
-        }
-
         _lastPosition = transform.position;
 
         GameObject baseObject = GameObject.FindGameObjectWithTag("Base");
@@ -54,10 +48,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        // Рассчитываем скорость движения
         CalculateMovementSpeed();
-
-        // Обновляем анимации
         UpdateAnimations();
 
         if (_hasReachedBase) return;
@@ -93,7 +84,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    // Расчет скорости для анимации
     void CalculateMovementSpeed()
     {
         Vector3 currentPosition = transform.position;
@@ -101,41 +91,60 @@ public class EnemyController : MonoBehaviour
         _lastPosition = currentPosition;
     }
 
-    // Обновление параметров аниматора
     void UpdateAnimations()
     {
         if (_animator == null) return;
 
-        // Устанавливаем скорость для анимации ходьбы/покоя
-        _animator.SetFloat("Speed", _currentSpeed);
+        int baseLayerIndex = 0; // Базовый слой (движение/покой)
+        int attackLayerIndex = 1; // Слой атаки
 
-        // Устанавливаем параметр атаки
-        _animator.SetBool("IsAttacking", _isInCombat);
+        // НОВАЯ ЛОГИКА СО СЛОЯМИ:
+        if (_isInCombat)
+        {
+            // В БОЮ - включаем слой атаки, выключаем движение
+            _animator.SetLayerWeight(attackLayerIndex, 1f);
+            _animator.SetLayerWeight(baseLayerIndex, 0f);
+            _animator.SetBool("IsAttacking", true);
+        }
+        else if (_isStoppedByEnemy)
+        {
+            // ОСТАНОВЛЕН ВРАГОМ - анимация покоя на базовом слое
+            _animator.SetLayerWeight(attackLayerIndex, 0f);
+            _animator.SetLayerWeight(baseLayerIndex, 1f);
+            _animator.SetFloat("Speed", 0f);
+            _animator.SetBool("IsAttacking", false);
+        }
+        else
+        {
+            // ДВИЖЕНИЕ - анимация ходьбы на базовом слое
+            _animator.SetLayerWeight(attackLayerIndex, 0f);
+            _animator.SetLayerWeight(baseLayerIndex, 1f);
+            _animator.SetFloat("Speed", 1f);
+            _animator.SetBool("IsAttacking", false);
+        }
 
-        // Дополнительно: направление движения для разворота спрайта
-        if (_currentTarget != null && _currentSpeed > 0.1f)
+        // Направление для разворота спрайта
+        if (_currentTarget != null)
         {
             UpdateSpriteDirection();
         }
     }
 
-    // Разворот спрайта в направлении движения
     void UpdateSpriteDirection()
     {
         Vector3 direction = _currentTarget.transform.position - transform.position;
 
-        // Разворачиваем спрайт по X
         if (direction.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); // Смотрит вправо
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (direction.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1); // Смотрит влево
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
-    // Остальные методы остаются без изменений...
+    // Остальные методы без изменений...
     Vector3 GetTargetPosition(GameObject target)
     {
         if (target.CompareTag("Base") && _baseBounds.size != Vector3.zero)
@@ -279,7 +288,6 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log($"💥 {gameObject.name} взрывается у базы! Урон: {explosionDamage}");
 
-        // Взрывная анимация (если есть)
         if (_animator != null)
         {
             _animator.SetTrigger("Explode");
@@ -320,7 +328,6 @@ public class EnemyController : MonoBehaviour
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
         }
 
-        // Задержка перед уничтожением чтобы анимация успела проиграться
         Invoke("Die", 0.5f);
     }
 
@@ -328,7 +335,6 @@ public class EnemyController : MonoBehaviour
     {
         Health -= damage;
 
-        // Анимация получения урона
         if (_animator != null)
         {
             _animator.SetTrigger("TakeDamage");
@@ -341,14 +347,5 @@ public class EnemyController : MonoBehaviour
     {
         if (_attackCoroutine != null) StopCoroutine(_attackCoroutine);
         Destroy(gameObject);
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, enemyDetectionRadius);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }
