@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using System;
+using UnityEngine;
 
 [System.Serializable]
 public class SpawnPointConfig
@@ -46,6 +48,9 @@ public class WaveManager : MonoBehaviour
     private bool gameStarted = false;
 
     public System.Action<float> OnTimerUpdate;
+    public static event Action OnEventStarted;
+
+
 
     void Start()
     {
@@ -152,6 +157,7 @@ public class WaveManager : MonoBehaviour
         }
 
         gameStarted = true;
+        OnEventStarted?.Invoke();
         StartCoroutine(WaveSpawner());
     }
 

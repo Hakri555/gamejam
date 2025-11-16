@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
-
-using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using TMPro;
-using DG.Tweening;
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+
 
 
 
@@ -54,6 +46,7 @@ public class DraggableCard : MonoBehaviour,
 
     public bool isTurret = false;
     public bool coudDrag = false;
+    public bool gameStarted = false;
 
     void Awake()
     {
@@ -77,9 +70,10 @@ public class DraggableCard : MonoBehaviour,
         foreGround.GetComponent<Image>().sprite = cardData.cardImage;
         parentLayoutGroup = startParent.GetComponent<LayoutGroup>();
         parentSizeFitter = startParent.GetComponent<ContentSizeFitter>();
+        WaveManager.OnEventStarted += TurnOfCard;
+    
     }
-
-
+    
     public void OnBeginDrag(PointerEventData eventData)
     {
         int i = 0;
@@ -113,7 +107,7 @@ public class DraggableCard : MonoBehaviour,
                     break;
             }
         }
-        if (!coudDrag)
+        if (!coudDrag || (gameStarted == true))
             return;
         canvasGroup.alpha = 0.7f;
         canvasGroup.blocksRaycasts = false;
@@ -130,7 +124,7 @@ public class DraggableCard : MonoBehaviour,
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (!coudDrag)
+        if (!coudDrag || (gameStarted == true))
             return;
         if (canvas == null)
         {
@@ -221,8 +215,11 @@ public class DraggableCard : MonoBehaviour,
                         break;
                 }
             }
-            if (prefab != null)
-                Instantiate(prefab, nearest.transform.position, Quaternion.identity);
+            if (prefab != null && (nearest.transform.childCount == 0))
+                Instantiate(prefab, nearest.transform.position, Quaternion.identity,nearest.transform);
+
+
+
         }
 
         ReturnToHand();
@@ -301,6 +298,18 @@ public class DraggableCard : MonoBehaviour,
         {
             isClicked = false;
             actionButton.SetActive(false);
+        }
+    }
+
+    private void TurnOfCard() 
+    {
+        if (gameStarted == true) 
+        {
+            gameStarted = false;
+        }
+        else
+        {
+            gameStarted = true;
         }
     }
    
