@@ -64,7 +64,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\FightControl\WaveUI.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Furnace\CreateSteelFurnaceButtonBehaviour.cs" />
+=======
+>>>>>>> feature/EntCardMeteorProd
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\SO\StatsConfig.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -129,6 +132,10 @@
     <Compile Include="Assets\Scripts\Asteroids\AsteroidSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\FightControl\EnemyController.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\Furnace\SteelFurnaceButton.cs" />
+>>>>>>> feature/EntCardMeteorProd
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>

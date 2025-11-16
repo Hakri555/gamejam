@@ -102,8 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   Damage: 10
-  MovementSpeed: 1
-  stopDistance: 1
+  MovementSpeed: 0.8
+  stopDistance: 1.5
   enemyDetectionRadius: 1
   explosionDamage: 50
   explosionRadius: 3

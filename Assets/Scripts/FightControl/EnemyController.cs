@@ -6,14 +6,17 @@ public class EnemyController : MonoBehaviour
     [Header("Характеристики врага")]
     public float Health = 100f;
     public float Damage = 10f;
-    public float MovementSpeed = 2f;
-    public float stopDistance = 1f;
-    public float enemyDetectionRadius = 1f;
+    public float MovementSpeed = 0.8f;
+    public float stopDistance = 1.5f;
+    public float enemyDetectionRadius = 1.5f;
 
     [Header("Взрыв при достижении базы")]
     public float explosionDamage = 50f;
     public float explosionRadius = 3f;
     public GameObject explosionEffect;
+
+    [Header("Настройки смерти")]
+    public float deathDelay = 0.5f;
 
     private Animator _animator;
     private bool _hasReachedBase = false;
@@ -345,7 +348,22 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
-        if (_attackCoroutine != null) StopCoroutine(_attackCoroutine);
-        Destroy(gameObject);
+        if (_attackCoroutine != null)
+            StopCoroutine(_attackCoroutine);
+
+        _hasReachedBase = true;
+        _isInCombat = false;
+        _isStoppedByEnemy = true;
+
+        if (_animator != null)
+        {
+            _animator.SetTrigger("Die");
+            _animator.SetFloat("Speed", 0f);
+            _animator.SetBool("IsAttacking", false);
+        }
+
+        this.enabled = false;
+
+        Destroy(gameObject, deathDelay);
     }
 }

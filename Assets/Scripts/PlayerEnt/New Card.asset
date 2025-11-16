@@ -16,7 +16,7 @@ MonoBehaviour:
   description: "\u0445\u0443\u0438\u043B\u043E\u0432\u0438\u0447"
   cardType: 0
   cardBackground: {fileID: 21300000, guid: 98ef292214b70f44196651ff3fe4f8b0, type: 3}
-  cardImage: {fileID: -1809573807, guid: 99549156c78211f4baa92365b2e7759b, type: 3}
+  cardImage: {fileID: -893383598, guid: ebb1d4183a704904c99f45d34de9893c, type: 3}
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}
   attackText: {fileID: 0}

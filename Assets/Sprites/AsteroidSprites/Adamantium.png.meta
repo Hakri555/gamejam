@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f8e677c308e3c334b85d445554f0933a
+=======
+guid: 1073312c56de8bc45ab5ad1559467e1b
+>>>>>>> feature/EntCardMeteorProd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
