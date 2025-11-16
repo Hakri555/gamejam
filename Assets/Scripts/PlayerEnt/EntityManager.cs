@@ -6,7 +6,7 @@ public class EntManager : MonoBehaviour
     [Header("Характеристики робота")]
     public float Health = 100f;
     public float Damage = 20f;
-    public float attackRange = 1.5f;
+    public float attackRange = 1f;
     public float attackRate = 1f;
     public string targetTag = "Enemy";
 

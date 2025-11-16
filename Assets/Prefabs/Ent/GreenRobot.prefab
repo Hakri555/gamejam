@@ -137,13 +137,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   Damage: 20
-  attackRange: 1.5
+  attackRange: 1
   attackRate: 1
   targetTag: Enemy
-  _animator: {fileID: 0}
-  idleAnimation: Idle
-  attackAnimation: Attack
   attackAnimationDuration: 0.5
+  debugMode: 1
 --- !u!50 &1213514967734638561
 Rigidbody2D:
   serializedVersion: 4

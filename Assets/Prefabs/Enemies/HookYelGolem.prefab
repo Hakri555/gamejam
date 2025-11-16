@@ -102,11 +102,12 @@ MonoBehaviour:
   Health: 100
   Damage: 10
   MovementSpeed: 0.8
-  stopDistance: 1
+  stopDistance: 2
   enemyDetectionRadius: 1.5
   explosionDamage: 50
   explosionRadius: 3
   explosionEffect: {fileID: 0}
+  deathDelay: 0.5
 --- !u!50 &4333239928112047813
 Rigidbody2D:
   serializedVersion: 4
@@ -144,7 +145,7 @@ Animator:
   m_GameObject: {fileID: 2484235758677999536}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eddb5b74109af804bbc6fc2d95c96240, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

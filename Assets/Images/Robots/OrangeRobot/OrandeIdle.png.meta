@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3e69f7195d1edb45be3fe4f6c508da7
+guid: 050687b71b7c82440ab9eea7bcd20280
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueAttack_0
+      name: OrandeIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2dfaa65209ed374c8a285bc5f08d837
-      internalID: 942800585
+      spriteID: a105057103405cf46b4a0139e3686e54
+      internalID: -1371285790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_1
+      name: OrandeIdle_1
       rect:
         serializedVersion: 2
         x: 800
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c5a5e66e777c1646bf79109ef5de333
-      internalID: -1740446893
+      spriteID: c2b7e9d709223284581b6f4fd301ad72
+      internalID: 168703576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_2
+      name: OrandeIdle_2
       rect:
         serializedVersion: 2
         x: 1600
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 009bb8eeb11346c4f8ea7c3617692da6
-      internalID: -578226847
+      spriteID: 2fcab4805199f334da0ee84a3d53ee70
+      internalID: 911994677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_3
+      name: OrandeIdle_3
       rect:
         serializedVersion: 2
         x: 2400
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298e7fb6dd5626b4db5e307357614a42
-      internalID: -808066165
+      spriteID: 912cfaa561bc6184aba96f582e474c8e
+      internalID: -1386118581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_4
+      name: OrandeIdle_4
       rect:
         serializedVersion: 2
         x: 3200
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3e605770b9c1848a19488e9e379a03
-      internalID: -368366865
+      spriteID: 59ba1be3768093d4fa466b6377597dae
+      internalID: 1289249002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_5
+      name: OrandeIdle_5
       rect:
         serializedVersion: 2
         x: 4000
@@ -216,8 +216,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b22d1f911a381d4bbddc8db8e3aae85
-      internalID: -1334779414
+      spriteID: b5a376e6b025b614991b147dbd3a8ac2
+      internalID: -1664853086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrandeIdle_6
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14557e4a4d83b64caf0df171fe6de06
+      internalID: -500128792
       vertices: []
       indices: 
       edges: []
@@ -233,12 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlueAttack_0: 942800585
-      BlueAttack_1: -1740446893
-      BlueAttack_2: -578226847
-      BlueAttack_3: -808066165
-      BlueAttack_4: -368366865
-      BlueAttack_5: -1334779414
+      OrandeIdle_0: -1371285790
+      OrandeIdle_1: 168703576
+      OrandeIdle_2: 911994677
+      OrandeIdle_3: -1386118581
+      OrandeIdle_4: 1289249002
+      OrandeIdle_5: -1664853086
+      OrandeIdle_6: -500128792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
