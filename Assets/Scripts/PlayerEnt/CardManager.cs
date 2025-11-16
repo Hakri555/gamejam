@@ -63,7 +63,12 @@ public class CardManager : MonoBehaviour
 
     public GameInfoDummy data;
 
+    [Header("Info about Waves")]
 
+    public WaveManager waveManager;
+
+
+    
 
     public void Update()
     {

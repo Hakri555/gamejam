@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 
   cardType: 0
   cardBackground: {fileID: 21300000, guid: f450efada9030dc44b14049ff278d476, type: 3}
-  cardImage: {fileID: 35280192, guid: fecf22e49916df343bfb1d62b20e9e19, type: 3}
+  cardImage: {fileID: 21300000, guid: 31c49e51c99b3f449bef16dfe9dfb418, type: 3}
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}
   attackText: {fileID: 0}

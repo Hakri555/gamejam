@@ -2705,6 +2705,8 @@ MonoBehaviour:
   attackRange: 1.5
   attackRate: 1
   targetTag: Enemy
+  attackAnimationDuration: 0.5
+  debugMode: 1
 --- !u!58 &756395333
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3406,6 +3408,10 @@ MonoBehaviour:
         spawnInterval: 1
     preWaveDelay: 0
   timeBetweenWaves: 5
+  initialDelay: 120
+  countdownText: {fileID: 0}
+  countdownPanel: {fileID: 0}
+  showMilliseconds: 0
   currentWaveIndex: 0
 --- !u!4 &898480420
 Transform:
@@ -12692,25 +12698,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0a83db477370445921e8dc9868d5ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedUpgrades:
-  - amount: 10
-    type: 0
-  - amount: 20
-    type: 1
-  - amount: 5
-    type: 1
-  reachUpgrades: []
-  processingUpgrades: []
+  asteroidSpawnRate: 10
+  asteroidProgression: 0
+  asteroidOreNum: 0
+  clawReach: 20
+  clawSpeed: 10
   raritySpreadTier1:
     rid: 1619464428718391296
   raritySpreadTier2:
     rid: 1619464428718391297
   raritySpreadTier3:
     rid: 1619464428718391298
-  asteroidSpawnRate: 10
-  asteroidOreNum: 0
-  clawReach: 20
-  clawSpeed: 10
   references:
     version: 2
     RefIds:

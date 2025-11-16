@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using DG.Tweening;
+using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
@@ -71,7 +72,10 @@ public class Turret : MonoBehaviour
         {
             Vector2 direction = _currentTarget.position - rotationPart.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            rotationPart.rotation = Quaternion.Euler(0, 0, angle);
+            rotationPart
+            .DORotate(new Vector3(0, 0, angle - 35), 0.3f); // 0.3 сек — скорость
+
+
         }
     }
 
