@@ -82,12 +82,14 @@
     <Compile Include="Assets\Scripts\FightControl\BaseHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\Furnace\Progress\ProgressBarLogic.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\SO\MainConfig.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\FightControl\Turret.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\Interfaces\IMovable.cs" />
+    <Compile Include="Assets\Scripts\Furnace\SteelFurnaceBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\Card.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\SO\BulletStats.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\Furnace\HellishSteelFurnaceBehaviour.cs" />
     <Compile Include="Assets\Scripts\States\UpgradeState.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\EntityMoveManager.cs" />
     <Compile Include="Assets\Scripts\PlayerEnt\DropSlotTower.cs" />
@@ -125,6 +128,7 @@
     <Compile Include="Assets\Scripts\Asteroids\AsteroidSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\FightControl\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Furnace\SteelFurnaceButton.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>
