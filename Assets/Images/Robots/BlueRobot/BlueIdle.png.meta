@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3e69f7195d1edb45be3fe4f6c508da7
+guid: 7b3df825fdc516248bd6b82e924e5f11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueAttack_0
+      name: BlueIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2dfaa65209ed374c8a285bc5f08d837
-      internalID: 942800585
+      spriteID: a3febc7d7c48a7e4a8342cc81e9dd172
+      internalID: 962752286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_1
+      name: BlueIdle_1
       rect:
         serializedVersion: 2
         x: 800
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c5a5e66e777c1646bf79109ef5de333
-      internalID: -1740446893
+      spriteID: 0351a2710a4e9b44bb1f29c0a5f0b237
+      internalID: -1355384331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_2
+      name: BlueIdle_2
       rect:
         serializedVersion: 2
         x: 1600
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 009bb8eeb11346c4f8ea7c3617692da6
-      internalID: -578226847
+      spriteID: d785ca9e4fe4120409d3f196bd410fbb
+      internalID: -917043234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_3
+      name: BlueIdle_3
       rect:
         serializedVersion: 2
         x: 2400
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298e7fb6dd5626b4db5e307357614a42
-      internalID: -808066165
+      spriteID: ea5f26e3910f38c438570684cbd8bb5a
+      internalID: -633410244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_4
+      name: BlueIdle_4
       rect:
         serializedVersion: 2
         x: 3200
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3e605770b9c1848a19488e9e379a03
-      internalID: -368366865
+      spriteID: 18d50efdd6066da41b927c162be9e714
+      internalID: -68084945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_5
+      name: BlueIdle_5
       rect:
         serializedVersion: 2
         x: 4000
@@ -216,8 +216,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b22d1f911a381d4bbddc8db8e3aae85
-      internalID: -1334779414
+      spriteID: f28946a5c41d95942be156c5cbc725ec
+      internalID: 1432597153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueIdle_6
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cd6ede99b24264ba926a3818613cc4
+      internalID: 2013073158
       vertices: []
       indices: 
       edges: []
@@ -233,12 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlueAttack_0: 942800585
-      BlueAttack_1: -1740446893
-      BlueAttack_2: -578226847
-      BlueAttack_3: -808066165
-      BlueAttack_4: -368366865
-      BlueAttack_5: -1334779414
+      BlueIdle_0: 962752286
+      BlueIdle_1: -1355384331
+      BlueIdle_2: -917043234
+      BlueIdle_3: -633410244
+      BlueIdle_4: -68084945
+      BlueIdle_5: 1432597153
+      BlueIdle_6: 2013073158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

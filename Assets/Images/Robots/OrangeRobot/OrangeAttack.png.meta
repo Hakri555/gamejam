@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3e69f7195d1edb45be3fe4f6c508da7
+guid: 8d483e168b3c0ea43bd9a080a371f887
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueAttack_0
+      name: OrangeAttack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2dfaa65209ed374c8a285bc5f08d837
-      internalID: 942800585
+      spriteID: 291c982f5f688164ebb63e61508ec4e8
+      internalID: 798281164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_1
+      name: OrangeAttack_1
       rect:
         serializedVersion: 2
         x: 800
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c5a5e66e777c1646bf79109ef5de333
-      internalID: -1740446893
+      spriteID: 4f2e87cd9327b9e45b0c54dd5805e085
+      internalID: -1016819815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_2
+      name: OrangeAttack_2
       rect:
         serializedVersion: 2
         x: 1600
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 009bb8eeb11346c4f8ea7c3617692da6
-      internalID: -578226847
+      spriteID: 6b08985e2c5a3f04786276eb36fc5f00
+      internalID: 1313359916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_3
+      name: OrangeAttack_3
       rect:
         serializedVersion: 2
         x: 2400
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298e7fb6dd5626b4db5e307357614a42
-      internalID: -808066165
+      spriteID: b1016ceca32d2784f8bcfb979d0e06c7
+      internalID: 150761999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_4
+      name: OrangeAttack_4
       rect:
         serializedVersion: 2
         x: 3200
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3e605770b9c1848a19488e9e379a03
-      internalID: -368366865
+      spriteID: 9ea30247df360f449b6e1c873dd6beff
+      internalID: 515788846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttack_5
+      name: OrangeAttack_5
       rect:
         serializedVersion: 2
         x: 4000
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b22d1f911a381d4bbddc8db8e3aae85
-      internalID: -1334779414
+      spriteID: ce89b8496e04b3d49b176a336fa96065
+      internalID: -444768615
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlueAttack_0: 942800585
-      BlueAttack_1: -1740446893
-      BlueAttack_2: -578226847
-      BlueAttack_3: -808066165
-      BlueAttack_4: -368366865
-      BlueAttack_5: -1334779414
+      OrangeAttack_0: 798281164
+      OrangeAttack_1: -1016819815
+      OrangeAttack_2: 1313359916
+      OrangeAttack_3: 150761999
+      OrangeAttack_4: 515788846
+      OrangeAttack_5: -444768615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
