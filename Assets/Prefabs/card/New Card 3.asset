@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62f58a2082088964e8ea7e0d957b5497, type: 3}
-  m_Name: New Card
+  m_Name: New Card 3
   m_EditorClassIdentifier: 
-  cardName: "\u0425\u0443\u0438\u043B\u0430"
-  description: "\u0445\u0443\u0438\u043B\u043E\u0432\u0438\u0447"
+  cardName: 
+  description: 
   cardType: 0
-  cardBackground: {fileID: 21300000, guid: 98ef292214b70f44196651ff3fe4f8b0, type: 3}
-  cardImage: {fileID: -893383598, guid: ebb1d4183a704904c99f45d34de9893c, type: 3}
+  cardBackground: {fileID: 21300000, guid: f450efada9030dc44b14049ff278d476, type: 3}
+  cardImage: {fileID: 35280192, guid: fecf22e49916df343bfb1d62b20e9e19, type: 3}
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}
   attackText: {fileID: 0}
   healthText: {fileID: 0}
-  prefab: {fileID: 319278681821656858, guid: 99edf79ed366fd9419766550ef970b7e, type: 3}
+  prefab: {fileID: 7192562887624622885, guid: 603fd41891e47ce4391bf210e9962e9b, type: 3}
   manaCost: 0
   attack: 0
   health: 0
-  cardArt: {fileID: -930795534, guid: c87a4a23ca615664499c15ba8c24b643, type: 3}
+  cardArt: {fileID: 0}
   tintColor: {r: 1, g: 1, b: 1, a: 1}
